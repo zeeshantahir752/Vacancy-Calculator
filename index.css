@@ -11,16 +11,49 @@ h3{
     float:"left";
 }
 .paragraph1{
-    padding-bottom: 40px;
+    padding-bottom: 80px;
     
 }
+#form1{
+margin-top: 2px;
+margin-left: 93px;
+}
 #form2{
-    margin-left: 200px;
+    margin-left: 203px;
+    
 }
 #form3{
+    margin-left: 173px;
+}
+#form4{
+margin-left: 143px;
+}
+#form5{
+    margin-left: 112px;
+}
+#form6{
     margin-left: 200px;
 }
+.paragraph4{
+    padding-bottom: 114px;
+}
+.importance_label{
+    padding-bottom: 32px;
+}
+#dailywage{
+    border-bottom: 1px solid #999;
+}
+#back6{
+  margin-top: 25px;
+    margin-left: 290px;
+}
+.resulting{
+    padding-left: 100px;
+}
 
+.paragraph5{
+    padding-bottom: 42px;
+}
 .container{
     width: 600px;
     height: 500px;
@@ -81,6 +114,7 @@ form label{
 #form6{
     left: 1550px;
 }
+
 #result{
     width: 110px;
     height: 35px;
@@ -99,7 +133,7 @@ form label{
   
   #myBar {
     width: 10%;
-    height: 30px;
+    height: 10px;
     background-color: rgb(20, 52, 121);
     text-align: center;
     line-height: 30px;
@@ -110,7 +144,7 @@ form label{
 
 #myBar2{
     width: 25%;
-    height: 30px;
+    height: 10px;
     background-color: rgb(20, 52, 121);
     text-align: center;
     line-height: 30px;
@@ -120,7 +154,7 @@ form label{
 }
 #myBar3{
     width: 50%;
-    height: 30px;
+    height: 10px;
     background-color: rgb(20, 52, 121);
     text-align: center;
     line-height: 30px;
@@ -130,7 +164,7 @@ form label{
 }
 #myBar4{
     width: 75%;
-    height: 30px;
+    height: 10px;
     background-color: rgb(20, 52, 121);
     text-align: center;
     line-height: 30px;
@@ -140,7 +174,7 @@ form label{
 }
 #myBar5{
     width: 100%;
-    height: 30px;
+    height: 10px;
     background-color: rgb(20, 52, 121);
     text-align: center;
     line-height: 30px;
@@ -160,10 +194,92 @@ form label{
 .results{
     margin-left: 50px;
 }
-.last_image{
-    margin-left: 30px;
-}
+
 .img {
      max-width: 100%;
     height: auto;
+}
+#output{
+    border-bottom: 1px solid #ccc;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+#missing{
+    border-bottom: 1px solid #ccc;
+    margin-top: 30px;
+    
+}
+@media (min-width: 480px) and (max-width: 767px) {
+    .container{
+        height: 800px;
+    }
+    form h3{
+        font-size: 15px;
+        font-weight: bold;
+        padding-top: 20px;
+    }
+    form p{
+        font-size: 10px;
+    }
+    form button{
+        margin-right: 310px;
+        
+        margin-bottom: 20px;
+        justify-content:space-around;
+        text-align: center;
+        
+    }
+    #myProgress {
+        width: 50%;
+        background-color: #ddd;
+        border-radius: 20px;
+        margin-bottom: 10px;
+      }
+    form input{
+        /* size: 10px; */
+        display: block;
+        width: 325px;
+    }
+    #form2{
+        margin-left: 110px;
+    }
+    #form3{
+        margin-left: 70px;
+        margin-top: 40px;
+    }
+    #form4{
+        margin-left: 50px;
+        margin-top: 0px;
+    }
+    #form5{
+        margin-left: 10px;
+    }
+    #form6{
+        margin-left: 50px;
+    }
+    .paragraph4{
+        margin-bottom: -20px;
+    }
+    .importance{
+        font-weight: bold;
+        font-size: 12px;
+    }
+    #btn{
+        margin-left: 230px;
+    }
+    #dailywage{
+        width: 50%;
+    }
+    .last_image{
+        margin-left: 50px;
+    }
+    #output{
+        width: 50%;
+    }
+    #missing{
+        width: 50%;
+    }
+    #back6{
+        margin-left: 200px;
+    }
 }
