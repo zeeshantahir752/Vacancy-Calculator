@@ -6,7 +6,7 @@
 // const salary_working_day = document.getElementById("salary_working_day");
 const btn = document.getElementById("btn");
 const out1= document.getElementById("output");
-var recruiting_time = 30;
+var recruiting_time = 250;
 const missing = document.getElementById("missing");
 
 //below variables are for styling the form fields
@@ -32,6 +32,11 @@ var working_days;
 var importance;
 var average_time;
 var salary_working_day;
+var dailywage;
+
+dailywage= function wage (){
+    return gross/working_days;
+}
 
 next1.onclick=function(){
     form1.style.left="1550px";
@@ -67,6 +72,9 @@ next4.onclick=function(){
     form4.style.left="1550px";
     form5.style.left="-20px";
     average_time = document.getElementById("average_time").value;
+    dailywage.innerHTML= document.getElementById("dailywage").value;
+    dailywage.value;
+    console.log("hello mother")
 };
 back4.onclick=function(){
     form3.style.left="-20px";
@@ -81,7 +89,9 @@ back5.onclick=function(){
 btn.onclick=function(){
     form5.style.left="1550px";
     form6.style.left="-20px";
-    salary_working_day = document.getElementById("salary_working_day").value;
+    dailywage.innerHTML = gross/working_days;
+    dailywage.value;
+    // salary_working_day = document.getElementById("salary_working_day").value;
 };
 back6.onclick=function(){
     form6.style.left="1550px";
@@ -94,38 +104,13 @@ function missing_share(){
 }
 
 function annual_salary() {
-    out1.innerHTML = importance * working_days * recruiting_time;
+    out1.innerHTML = importance * dailywage * recruiting_time;
     
 }
 
 btn.addEventListener("click", annual_salary);
 btn.addEventListener("click", missing_share);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+next1.addEventListener("click", wage);
 
 
 //here the progressbar starts
