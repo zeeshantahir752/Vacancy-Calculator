@@ -24,7 +24,7 @@
                             <img src="icon_2.png" alt="">
                         </div>
                         <div class="col-lg-9">
-                            <h3>SALARY OF THE EMPLOYEE IN GROSS / YEAR</h3>
+                            <h3 >SALARY OF THE EMPLOYEE IN GROSS / YEAR</h3>
                             <p class="paragraph1">Indicates how much an employee earns gross in euros per year.</p>
                             <label for="">SALARY PER YEAR (GROSS)</label>
                             <input type="text" placeholder="Annual Salary" id="gross" required>
@@ -40,10 +40,10 @@
                 </form>
             </div>
             <div class="row">
-                <div class="col-lg-2">
+                <div class="col-lg-1">
 
                 </div>
-                <div class="col-lg-10">
+                <div class="col-lg-11">
 
                     <form action="" id="form2">
                         <div class="row">
@@ -72,10 +72,10 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-2">
+                <div class="col-lg-1">
 
                 </div>
-                <div class="col-lg-10">
+                <div class="col-lg-11">
 
                     <form action="" id="form3">
                         <div class="row">
@@ -84,11 +84,11 @@
                             </div>
                             <div class="col-lg-9">
                                 <h3>IMPORTANCE OF THE VACANT POSITION:</h3>
-                                <p>Here you determine the importance of the position for your company. Select the following factors:</p>
+                                <p class="importance_label">Here you determine the importance of the position for your company. Select the following factors:</p>
                                 
-                                <label for="" class="importance_label">3 = very important or 2 = important or 1 =
+                                <p class="importance">3 = very important or 2 = important or 1 =
                                     necessary but less
-                                    important</label>
+                                    important</p> 
                                 
                                 <input type="text" placeholder="1/2/3" required id="importance" required>
                                 <div class="btn-box">
@@ -104,10 +104,10 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-2">
+                <div class="col-lg-1">
 
                 </div>
-                <div class="col-lg-10">
+                <div class="col-lg-11">
 
                     <form action="" id="form4">
                         <div class="row">
@@ -116,7 +116,7 @@
                             </div>
                             <div class="col-lg-9">
                                 <h3>Ø TIME TO FILL A VACANCY:</h3>
-                                <p class="paragraph1">Indicates how long it takes to fill a vacancy.</p>
+                                <p class="paragraph1 paragraph4">Indicates how long it takes to fill a vacancy.</p>
                                 <label for="">AVERAGE TIME IN DAYS</label>
                                 <input type="text" placeholder="123" required id="average_time" required>
                                 <div class="btn-box">
@@ -132,10 +132,10 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-2">
+                <div class="col-lg-1">
 
                 </div>
-                <div class="col-lg-10">
+                <div class="col-lg-11">
 
                     <form action="" id="form5">
                         <div class="row">
@@ -143,10 +143,11 @@
                                 <img src="icon_5.png" alt="">
                             </div>
                             <div class="col-lg-9">
-                                <h3>SALARY OF THE EMPLOYEE IN GROSS / WORKING DAY:</h3>
+                                <h3 class="paragraph5">SALARY OF THE EMPLOYEE IN GROSS / WORKING DAY:</h3>
                                 <p class="paragraph1"></p>
                                 <label for="">SALARY PER WORKING DAY (GROSS)</label>
-                                <input type="text" placeholder="123" required id="salary_working_day" required>
+                                <!-- <input type="text" placeholder="123" required id="salary_working_day" required> -->
+                                <p id="dailywage"></p>
                                 <div class="btn-box">
                                     <div id="myProgress">
                                         <div id="myBar5"></div>
@@ -161,26 +162,35 @@
             </div>
             <form action="" id="form6">
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-lg-1">
+
+                    </div>
+                    <div class="col-lg-11">
+                    <div class="row">
+                    <div class="col-lg-2">
                         <img src="icon_1.png" alt="" class="last_image">
                     </div>
-                    <div class="col-lg-8">
+                    <div class="col-lg-10 resulting">
                             <div class="col-lg-9 results">
                                 <h3 >The annual Salary Will be:</h3>
                                 <p id="output"></p>
                                 <h3>The price of missing share is:</h3>
                                 <p id="missing"></p>
+                                <div id="myProgress">
+                                    <div id="myBar5"></div>
+                                </div>
                                 <button type="button" id="back6">Return</button>
                             </div>
                         </div>
-                    
-
+                    </div>
+                </div>
 
                 </div>
             </form>
 
         </div>
         <script src="index.js"></script>
+    </div>
 </body>
 
 </html>
