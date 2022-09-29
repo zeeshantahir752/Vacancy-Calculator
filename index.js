@@ -6,7 +6,7 @@
 // const salary_working_day = document.getElementById("salary_working_day");
 const btn = document.getElementById("btn");
 const out1= document.getElementById("output");
-var recruiting_time = 250;
+var recruiting_time;
 const missing = document.getElementById("missing");
 
 //below variables are for styling the form fields
@@ -31,12 +31,8 @@ var gross;
 var working_days;
 var importance;
 var average_time;
-var salary_working_day;
-var dailywage;
+var dailywage=document.getElementById("dailywage");
 
-dailywage= function wage (){
-    return gross/working_days;
-}
 
 next1.onclick=function(){
     form1.style.left="1550px";
@@ -71,15 +67,15 @@ back3.onclick=function(){
 next4.onclick=function(){
     form4.style.left="1550px";
     form5.style.left="-20px";
-    average_time = document.getElementById("average_time").value;
-    dailywage.innerHTML= document.getElementById("dailywage").value;
-    dailywage.value;
+    dailywage.innerHTML=gross/working_days;
+    dailywage=document.getElementById("dailywage");
+    recruiting_time=document.getElementById("average_time").value;
+    
     console.log("hello mother")
 };
 back4.onclick=function(){
     form3.style.left="-20px";
     form4.style.left="1550px";
-    salary_working_day = document.getElementById("salary_working_day").value;
 };
 back5.onclick=function(){
     form5.style.left="1550px";
@@ -89,8 +85,7 @@ back5.onclick=function(){
 btn.onclick=function(){
     form5.style.left="1550px";
     form6.style.left="-20px";
-    dailywage.innerHTML = gross/working_days;
-    dailywage.value;
+    // wage= document.getElementById("dailywage").value;
     // salary_working_day = document.getElementById("salary_working_day").value;
 };
 back6.onclick=function(){
@@ -100,17 +95,43 @@ back6.onclick=function(){
 
 
 function missing_share(){
-    missing.innerHTML=(salary_working_day*importance*recruiting_time)-(salary_working_day*recruiting_time);
+    missing.innerHTML=((Math.ceil(gross/working_days))*importance*recruiting_time)-((Math.ceil(gross/working_days))*recruiting_time);
+    console.log("heelo missing");
 }
 
 function annual_salary() {
-    out1.innerHTML = importance * dailywage * recruiting_time;
+    out1.innerHTML = importance * (gross/working_days) * recruiting_time;
+    console.log("hELLOW ANNAUL SALARY");
     
 }
 
 btn.addEventListener("click", annual_salary);
 btn.addEventListener("click", missing_share);
-next1.addEventListener("click", wage);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //here the progressbar starts
