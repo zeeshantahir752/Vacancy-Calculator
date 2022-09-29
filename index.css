@@ -283,3 +283,89 @@ form label{
         margin-left: 200px;
     }
 }
+@media (min-width: 320px) and (max-width: 428px) {
+    form h3{
+        font-size: 13px;
+        font-weight: bold;
+        padding-top: 20px;
+    }
+    form p{
+        font-size: 11px;
+    }
+    .container{
+        height: 800px;
+    }
+    #form1{
+        margin-left: 70px;
+    }
+    #form2{
+        margin-left: 70px;
+    }
+    #form3{
+        margin-left: 55px;
+        margin-top: 40px;
+    }
+    #form4{
+        margin-left: 20px;
+    }
+    #form5{
+        margin-left: 0px;
+    }
+    #form6{
+        margin-left: 50px;
+    }
+    .importance{
+        font-weight: bold;
+        font-size: 9px;
+    }
+    .importance_label{
+        font-size: 10px;
+    }
+    form button{
+        margin-right: 330px;
+        margin-bottom: 20px;
+    }
+    form input{
+        width: 50%;
+        display: block;
+    }
+    #myProgress {
+        width: 42%;
+        background-color: #ddd;
+        border-radius: 20px;
+        margin-bottom: 10px;
+      }
+      #btn{
+        margin-left: 210px;
+    }
+    #dailywage{
+        width: 42%;
+    }
+    .last_image{
+        margin-left: 50px;
+    }
+    #output{
+        width: 42%;
+    }
+    #missing{
+        width: 42%;
+    }
+    #importance{
+        width: 42%;
+    }
+    #working_days{
+        width: 42%;
+    }
+    #gross{
+        width: 42%;
+    }
+    .paragraph5{
+        font-size: 12px;
+        font-weight: bold;
+    }
+    #back6{
+        margin-left: 150px;
+    }
+    
+
+}
