@@ -58,7 +58,7 @@ margin-left: 143px;
     width: 600px;
     height: 500px;
     margin: 50px 0px 0px 0px;
-    background-color: rgb(243, 243, 243);
+    background-color: rgb(236, 251, 255);
     position: relative;
     border-radius: 20px;
 }
@@ -90,7 +90,7 @@ form button{
     width: 110px;
     height: 35px;
     margin: 0 10px;
-    background: rgb(44, 41, 120);
+    background: #051b2c;
     border: none;
     border-radius: 20px;
     box-shadow: 0.5in;
@@ -119,14 +119,14 @@ form label{
     width: 110px;
     height: 35px;
     margin: 0 10px;
-    background: rgb(44, 41, 120);
+    background: #051b2c;
     border-radius: 20px;
     box-shadow: 0.5in;
     color: white;
 }
 #myProgress {
     width: 100%;
-    background-color: #ddd;
+    background-color: #ececec;
     border-radius: 20px;
     margin-bottom: 10px;
   }
@@ -134,7 +134,7 @@ form label{
   #myBar {
     width: 10%;
     height: 10px;
-    background-color: rgb(20, 52, 121);
+    background-color: #051b2c;
     text-align: center;
     line-height: 30px;
     color: white;
@@ -145,7 +145,7 @@ form label{
 #myBar2{
     width: 25%;
     height: 10px;
-    background-color: rgb(20, 52, 121);
+    background-color:#051b2c;
     text-align: center;
     line-height: 30px;
     color: white;
@@ -155,7 +155,7 @@ form label{
 #myBar3{
     width: 50%;
     height: 10px;
-    background-color: rgb(20, 52, 121);
+    background-color:#051b2c;
     text-align: center;
     line-height: 30px;
     color: white;
@@ -165,7 +165,7 @@ form label{
 #myBar4{
     width: 75%;
     height: 10px;
-    background-color: rgb(20, 52, 121);
+    background-color: #051b2c;
     text-align: center;
     line-height: 30px;
     color: white;
@@ -175,7 +175,7 @@ form label{
 #myBar5{
     width: 100%;
     height: 10px;
-    background-color: rgb(20, 52, 121);
+    background-color:#051b2c;
     text-align: center;
     line-height: 30px;
     color: white;
@@ -186,7 +186,7 @@ form label{
     width: 110px;
     height: 40px;
     margin: 0 10px;
-    background: rgb(44, 41, 120);
+    background: #051b2c;
     border-radius: 20px;
     box-shadow: 1in;
     color: white;
@@ -200,12 +200,12 @@ form label{
     height: auto;
 }
 #output{
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #ececec;
     margin-top: 30px;
     margin-bottom: 50px;
 }
 #missing{
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #ececec;
     margin-top: 30px;
     
 }
@@ -231,7 +231,7 @@ form label{
     }
     #myProgress {
         width: 50%;
-        background-color: #ddd;
+        background-color: #ececec;
         border-radius: 20px;
         margin-bottom: 10px;
       }
@@ -331,7 +331,7 @@ form label{
     }
     #myProgress {
         width: 42%;
-        background-color: #ddd;
+        background-color: #ececec;
         border-radius: 20px;
         margin-bottom: 10px;
       }
