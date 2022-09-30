@@ -9,6 +9,7 @@ const out1= document.getElementById("output");
 var recruiting_time;
 const missing = document.getElementById("missing");
 
+
 //below variables are for styling the form fields
 var form1=document.getElementById("form1");
 var form2=document.getElementById("form2");
